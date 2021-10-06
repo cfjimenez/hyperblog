@@ -8,3 +8,25 @@ git log --stat #Observar exactamente en que archivos especificos se hicieron los
 git checkout "id" "archivo" #Se regresa a la version especificada y se queda listo para hacer un commit
 git checkout master "archivo" #Se regresa a la última versión ingresada
 git reset HEAD #Este es el comando para sacar archivos del área de staging. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add, por supuesto.
+
+
+#Para traer los cambios de un repositorio remoto
+
+# Primero: Guardar la URL del repositorio de GitHub
+# con el nombre de origin
+git remote add origin URL
+
+# Segundo: Verificar que la URL se haya guardado
+# correctamente:
+git remote
+git remote -v
+
+# Tercero: Traer la versión del repositorio remoto y
+# hacer merge para crear un commit con los archivos
+# de ambas partes. Podemos usar git fetch y git merge
+# o solo el git pull con el flag --allow-unrelated-histories:
+git pull origin master --allow-unrelated-histories
+
+# Por último, ahora sí podemos hacer git push para guardar
+# los cambios de nuestro repositorio local en GitHub:
+git push origin master
