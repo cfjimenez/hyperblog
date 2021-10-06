@@ -38,3 +38,11 @@ clave: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
 git remote -v # paera ver la url del repositorio remoto 
 git remote set-url origin git@github.com:cfjimenez/hyperblog.git # cambiar la url del repositorio
 
+
+para ver graficando los cambios
+git log --all --graph --decorate --oneline
+crear tag 
+git tag -a v0.1 -m "resultado de las primeras clases" a1fc0d1
+ ver los tags
+
+ git show-ref --tags
