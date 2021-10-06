@@ -30,3 +30,6 @@ git pull origin master --allow-unrelated-histories
 # Por último, ahora sí podemos hacer git push para guardar
 # los cambios de nuestro repositorio local en GitHub:
 git push origin master
+
+
+clave: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
