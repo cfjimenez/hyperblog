@@ -32,4 +32,4 @@ git pull origin master --allow-unrelated-histories
 git push origin master
 
 
-clave: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
+clave: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
