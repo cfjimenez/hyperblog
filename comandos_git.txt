@@ -33,3 +33,8 @@ git push origin master
 
 
 clave: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
+
+
+git remote -v # paera ver la url del repositorio remoto 
+git remote set-url origin git@github.com:cfjimenez/hyperblog.git # cambiar la url del repositorio
+
