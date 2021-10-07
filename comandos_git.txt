@@ -1,4 +1,11 @@
+#Para crear el usuario global 
+    git config --global user.email "cris-thianj@hotmail.com"
+    git config --global user.name "christian1093"
+
+
 git rm --cached archivo #Permite eliminar al archivo en el registro de git
+
+
 git diff id_viejo id_nuevo #diferencia entre dos commits
 git reset id --hard #forzamos para regresar a un antiguo commits
 git reset id --soft #Regresamos a un antiguo commit conservando el ultimo stage realizado
@@ -39,10 +46,20 @@ git remote -v # paera ver la url del repositorio remoto
 git remote set-url origin git@github.com:cfjimenez/hyperblog.git # cambiar la url del repositorio
 
 
-para ver graficando los cambios
-git log --all --graph --decorate --oneline
-crear tag 
-git tag -a v0.1 -m "resultado de las primeras clases" a1fc0d1
- ver los tags
+#para ver graficando los cambios
+    git log --all --graph --decorate --oneline
+#crear tag 
+    git tag -a v0.1 -m "resultado de las primeras clases" a1fc0d1
+#ver los tags
+    git tag
+    git show-ref --tags
 
- git show-ref --tags
+
+#Publicar el tag en el repositorio
+    git push origin --tags
+
+#eliminar tag
+    git tag -d dormido
+#eliminar tambien en la web del git
+    git push origin :refs/tags/dormido
+
