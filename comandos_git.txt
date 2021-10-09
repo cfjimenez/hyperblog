@@ -63,3 +63,5 @@ git remote set-url origin git@github.com:cfjimenez/hyperblog.git # cambiar la ur
 #eliminar tambien en la web del git
     git push origin :refs/tags/dormido
 
+#traer un commit viejo
+    git cherry-pick IDCommit
