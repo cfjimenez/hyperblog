@@ -70,3 +70,15 @@ git remote set-url origin git@github.com:cfjimenez/hyperblog.git # cambiar la ur
 #ver cada movimiento en git
     git reflog
 
+#buscar  la palabra color en los archivos
+    git grep color
+
+# saber en que linea esta esa palabra
+    git grep -n color
+
+# Contador total de esa palabra en los archivos
+    git grep -c la
+
+#buscar en los comentarios de los commits
+    git log -S "cabecera"
+
