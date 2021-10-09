@@ -65,3 +65,8 @@ git remote set-url origin git@github.com:cfjimenez/hyperblog.git # cambiar la ur
 
 #traer un commit viejo
     git cherry-pick IDCommit
+
+
+#ver cada movimiento en git
+    git reflog
+
